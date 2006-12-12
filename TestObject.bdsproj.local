@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2005/12/02 15:35:10.421.pas,P:\delphi\Berkeley DB\Berkeley DB\db\build_win32\ObjectUnit1.pas=</Transaction>
+    <Transaction>2005/12/02 15:35:10.421.dfm,P:\delphi\Berkeley DB\Berkeley DB\db\build_win32\ObjectUnit1.dfm=</Transaction>
+    <Transaction>2005/12/02 15:36:25.265.pas,P:\delphi\Berkeley DB\Berkeley DB\db\build_win32\ObjectUnit1.pas=</Transaction>
+    <Transaction>2005/12/02 15:36:25.265.dfm,P:\delphi\Berkeley DB\Berkeley DB\db\build_win32\ObjectUnit1.dfm=</Transaction>
+    <Transaction>2006/12/05 10:35:08.765.pas,D:\Preventech\Berkeley DB\build_win32\BerkeleyDLL.pas=</Transaction>
+    <Transaction>2006/12/05 15:23:58.531.pas,D:\Preventech\Berkeley DB\build_win32\Unit2.pas=D:\Preventech\Berkeley DB\build_win32\BerkeleyDB.pas</Transaction>
+    <Transaction>2006/12/05 15:26:24.296.pas,D:\Preventech\Berkeley DB\build_win32\Unit2.pas=D:\Preventech\Berkeley DB\build_win32\BerkeleyEnv.pas</Transaction>
+  </Transactions>
+</BorlandProject>

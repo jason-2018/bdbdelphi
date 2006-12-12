@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<PersonalityInfo>
+		<Option>
+			<Option Name="Personality">Default.Personality</Option>
+			<Option Name="ProjectType"></Option>
+			<Option Name="Version">1.0</Option>
+			<Option Name="GUID">{32D75FB7-300F-4B2A-B4CE-35776A5BF96A}</Option>
+		</Option>
+	</PersonalityInfo>
+	<Default.Personality>  <Projects>
+      <Projects Name="Berkeley.bpl">Berkeley.bdsproj</Projects>
+      <Projects Name="TestObject.exe">TestObject.bdsproj</Projects>
+      <Projects Name="Project1.exe">Project1.bdsproj</Projects>
+      <Projects Name="TestBDB.exe">TestBDB.bdsproj</Projects>
+      <Projects Name="TestBerkeley.exe">TestBerkeley.bdsproj</Projects>
+      <Projects Name="Targets">Berkeley.bpl TestObject.exe Project1.exe TestBDB.exe TestBerkeley.exe</Projects>
+    </Projects>
+    <Dependencies/>
+  </Default.Personality>  <StarTeamAssociation></StarTeamAssociation>
+  <StarTeamNonRelativeFiles></StarTeamNonRelativeFiles>
+</BorlandProject>

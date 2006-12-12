@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="BDB.lib"/>
+    <OBJFILES value="..\btree\bt_conv.obj ..\btree\bt_compare.obj ..\btree\bt_curadj.obj 
+      ..\btree\bt_cursor.obj ..\btree\bt_delete.obj ..\btree\bt_method.obj 
+      ..\btree\bt_open.obj ..\btree\bt_put.obj ..\btree\bt_rec.obj 
+      ..\btree\bt_reclaim.obj ..\btree\bt_recno.obj ..\btree\bt_rsearch.obj 
+      ..\btree\bt_search.obj ..\btree\bt_split.obj ..\btree\bt_stat.obj 
+      ..\btree\bt_verify.obj ..\btree\bt_upgrade.obj ..\btree\btree_auto.obj 
+      ..\clib\strcasecmp.obj ..\common\crypto_stub.obj 
+      ..\common\db_byteorder.obj ..\common\db_err.obj ..\common\db_getlong.obj 
+      ..\common\db_idspace.obj ..\common\db_log2.obj ..\common\util_cache.obj 
+      ..\common\util_log.obj ..\common\util_sig.obj ..\cxx\cxx_db.obj 
+      ..\cxx\cxx_dbc.obj ..\cxx\cxx_dbt.obj ..\cxx\cxx_env.obj 
+      ..\cxx\cxx_except.obj ..\cxx\cxx_lock.obj ..\cxx\cxx_logc.obj 
+      ..\cxx\cxx_mpool.obj ..\cxx\cxx_multi.obj ..\cxx\cxx_txn.obj 
+      ..\db\crdel_auto.obj ..\db\crdel_rec.obj ..\db\db.obj ..\db\db_am.obj 
+      ..\db\db_auto.obj ..\db\db_cam.obj ..\db\db_conv.obj ..\db\db_dispatch.obj 
+      ..\db\db_dup.obj ..\db\db_iface.obj ..\db\db_join.obj ..\db\db_meta.obj 
+      ..\db\db_method.obj ..\db\db_open.obj ..\db\db_overflow.obj 
+      ..\db\db_ovfl_vrfy.obj ..\db\db_pr.obj ..\db\db_rec.obj 
+      ..\db\db_reclaim.obj ..\db\db_remove.obj ..\db\db_rename.obj 
+      ..\db\db_ret.obj ..\db\db_truncate.obj ..\db\db_upg.obj 
+      ..\db\db_upg_opd.obj ..\db\db_vrfy.obj ..\db\db_vrfyutil.obj 
+      ..\dbm\dbm.obj ..\dbreg\dbreg.obj ..\dbreg\dbreg_auto.obj 
+      ..\dbreg\dbreg_rec.obj ..\dbreg\dbreg_util.obj ..\env\db_salloc.obj 
+      ..\env\db_shash.obj ..\env\env_file.obj ..\env\env_method.obj 
+      ..\env\env_open.obj ..\env\env_recover.obj ..\env\env_region.obj 
+      ..\fileops\fileops_auto.obj ..\fileops\fop_basic.obj 
+      ..\fileops\fop_rec.obj ..\fileops\fop_util.obj ..\hash\hash.obj 
+      ..\hash\hash_auto.obj ..\hash\hash_conv.obj ..\hash\hash_dup.obj 
+      ..\hash\hash_func.obj ..\hash\hash_meta.obj ..\hash\hash_method.obj 
+      ..\hash\hash_open.obj ..\hash\hash_page.obj ..\hash\hash_rec.obj 
+      ..\hash\hash_reclaim.obj ..\hash\hash_stat.obj ..\hash\hash_upgrade.obj 
+      ..\hash\hash_verify.obj ..\hmac\hmac.obj ..\hmac\sha1.obj 
+      ..\hsearch\hsearch.obj ..\lock\lock.obj ..\lock\lock_deadlock.obj 
+      ..\lock\lock_method.obj ..\lock\lock_region.obj ..\lock\lock_stat.obj 
+      ..\lock\lock_util.obj ..\log\log.obj ..\log\log_archive.obj 
+      ..\log\log_compare.obj ..\log\log_get.obj ..\log\log_method.obj 
+      ..\log\log_put.obj ..\mp\mp_alloc.obj ..\mp\mp_bh.obj ..\mp\mp_fget.obj 
+      ..\mp\mp_fopen.obj ..\mp\mp_fput.obj ..\mp\mp_fset.obj ..\mp\mp_method.obj 
+      ..\mp\mp_region.obj ..\mp\mp_register.obj ..\mp\mp_stat.obj 
+      ..\mp\mp_sync.obj ..\mp\mp_trickle.obj ..\mutex\mut_win32.obj 
+      ..\mutex\mutex.obj ..\os\os_alloc.obj ..\os\os_id.obj ..\os\os_method.obj 
+      ..\os\os_oflags.obj ..\os\os_region.obj ..\os\os_root.obj 
+      ..\os\os_rpath.obj ..\os\os_tmpdir.obj ..\os\os_unlink.obj 
+      ..\os_win32\os_abs.obj ..\os_win32\os_clock.obj ..\os_win32\os_config.obj 
+      ..\os_win32\os_dir.obj ..\os_win32\os_errno.obj ..\os_win32\os_fid.obj 
+      ..\os_win32\os_fsync.obj ..\os_win32\os_handle.obj ..\os_win32\os_map.obj 
+      ..\os_win32\os_open.obj ..\os_win32\os_rename.obj ..\os_win32\os_rw.obj 
+      ..\os_win32\os_seek.obj ..\os_win32\os_sleep.obj ..\os_win32\os_spin.obj 
+      ..\os_win32\os_stat.obj ..\qam\qam.obj ..\qam\qam_auto.obj 
+      ..\qam\qam_conv.obj ..\qam\qam_files.obj ..\qam\qam_method.obj 
+      ..\qam\qam_open.obj ..\qam\qam_rec.obj ..\qam\qam_stat.obj 
+      ..\qam\qam_upgrade.obj ..\qam\qam_verify.obj ..\rep\rep_method.obj 
+      ..\rep\rep_record.obj ..\rep\rep_region.obj ..\rep\rep_util.obj 
+      ..\txn\txn.obj ..\txn\txn_auto.obj ..\txn\txn_method.obj 
+      ..\txn\txn_rec.obj ..\txn\txn_recover.obj ..\txn\txn_region.obj 
+      ..\txn\txn_stat.obj ..\txn\txn_util.obj ..\xa\xa.obj ..\xa\xa_db.obj 
+      ..\xa\xa_map.obj"/>
+    <RESFILES value="BDB.res libdb.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value="libdb.def"/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="vcl.bpi rtl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
+      vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
+      teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
+      dsnapcrba.bpi dsnapcon.bpi bcbsmp.bpi vclie.bpi xmlrtl.bpi inet.bpi 
+      inetdbbde.bpi inetdbxpress.bpi inetdb.bpi nmfast.bpi webdsnap.bpi 
+      bcbie.bpi websnap.bpi soaprtl.bpi dclocx.bpi dbexpress.bpi dbxcds.bpi 
+      indy.bpi bcb2kaxserver.bpi"/>
+    <PATHCPP value=".;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\btree;..\clib;..\common;..\common;..\common;..\common;..\common;..\common;..\common;..\common;..\common;..\cxx;..\cxx;..\cxx;..\cxx;..\cxx;..\cxx;..\cxx;..\cxx;..\cxx;..\cxx;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\db;..\dbm;..\dbreg;..\dbreg;..\dbreg;..\dbreg;..\env;..\env;..\env;..\env;..\env;..\env;..\env;..\fileops;..\fileops;..\fileops;..\fileops;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hash;..\hmac;..\hmac;..\hsearch;..\lock;..\lock;..\lock;..\lock;..\lock;..\lock;..\log;..\log;..\log;..\log;..\log;..\log;..\mp;..\mp;..\mp;..\mp;..\mp;..\mp;..\mp;..\mp;..\mp;..\mp;..\mp;..\mp;..\mutex;..\mutex;..\os;..\os;..\os;..\os;..\os;..\os;..\os;..\os;..\os;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\os_win32;..\qam;..\qam;..\qam;..\qam;..\qam;..\qam;..\qam;..\qam;..\qam;..\qam;..\rep;..\rep;..\rep;..\rep;..\txn;..\txn;..\txn;..\txn;..\txn;..\txn;..\txn;..\txn;..\xa;..\xa;..\xa"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL;_RTLDLL;USEPACKAGES"/>
+    <MAINSOURCE value="BDB.bpf"/>
+    <INCLUDEPATH value="..\xa;..\txn;..\rep;..\qam;..\os_win32;..\os;..\mutex;..\mp;..\log;..\lock;..\hsearch;..\hmac;..\hash;..\fileops;..\env;..\dbreg;..\dbm;..\db;..\cxx;..\common;..\clib;..\examples_cxx;..\btree;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\xa;..\txn;..\rep;..\qam;..\os_win32;..\os;..\mutex;..\mp;..\log;..\lock;..\hsearch;..\hmac;..\hash;..\fileops;..\env;..\dbreg;..\dbm;..\db;..\cxx;..\common;..\clib;..\examples_cxx;..\btree;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I..\xa -I..\txn -I..\rep -I..\qam -I..\os_win32 -I..\os -I..\mutex 
+      -I..\mp -I..\log -I..\lock -I..\hsearch -I..\hmac -I..\hash -I..\fileops 
+      -I..\env -I..\dbreg -I..\dbm -I..\db -I..\cxx -I..\common -I..\clib 
+      -I..\examples_cxx -I..\btree -I$(BCB)\include -I$(BCB)\include\vcl 
+      -src_suffix cpp -D_DEBUG -boa"/>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -X- -r- -a8 -b- -k -y -v -vi- -tWC 
+      -tWM -c"/>
+    <PFLAGS value="-$YD -$W -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -ap -Tpe -x -Gn -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj $(PACKAGES) $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="BDB.res" FORMNAME="" UNITNAME="BDB.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="BDB.bpf" FORMNAME="" UNITNAME="BDB" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_conv.c" FORMNAME="" UNITNAME="bt_conv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_compare.c" FORMNAME="" UNITNAME="bt_compare" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_curadj.c" FORMNAME="" UNITNAME="bt_curadj" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_cursor.c" FORMNAME="" UNITNAME="bt_cursor" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_delete.c" FORMNAME="" UNITNAME="bt_delete" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_method.c" FORMNAME="" UNITNAME="bt_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_open.c" FORMNAME="" UNITNAME="bt_open" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_put.c" FORMNAME="" UNITNAME="bt_put" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_rec.c" FORMNAME="" UNITNAME="bt_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_reclaim.c" FORMNAME="" UNITNAME="bt_reclaim" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_recno.c" FORMNAME="" UNITNAME="bt_recno" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_rsearch.c" FORMNAME="" UNITNAME="bt_rsearch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_search.c" FORMNAME="" UNITNAME="bt_search" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_split.c" FORMNAME="" UNITNAME="bt_split" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_stat.c" FORMNAME="" UNITNAME="bt_stat" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_verify.c" FORMNAME="" UNITNAME="bt_verify" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\bt_upgrade.c" FORMNAME="" UNITNAME="bt_upgrade" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\btree\btree_auto.c" FORMNAME="" UNITNAME="btree_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libdb.def" FORMNAME="" UNITNAME="libdb.def" CONTAINERID="DefTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="libdb.rc" FORMNAME="" UNITNAME="libdb.rc" CONTAINERID="RCCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\clib\strcasecmp.c" FORMNAME="" UNITNAME="strcasecmp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\crypto_stub.c" FORMNAME="" UNITNAME="crypto_stub" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\db_byteorder.c" FORMNAME="" UNITNAME="db_byteorder" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\db_err.c" FORMNAME="" UNITNAME="db_err" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\db_getlong.c" FORMNAME="" UNITNAME="db_getlong" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\db_idspace.c" FORMNAME="" UNITNAME="db_idspace" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\db_log2.c" FORMNAME="" UNITNAME="db_log2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\util_cache.c" FORMNAME="" UNITNAME="util_cache" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\util_log.c" FORMNAME="" UNITNAME="util_log" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\common\util_sig.c" FORMNAME="" UNITNAME="util_sig" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_db.cpp" FORMNAME="" UNITNAME="cxx_db" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_dbc.cpp" FORMNAME="" UNITNAME="cxx_dbc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_dbt.cpp" FORMNAME="" UNITNAME="cxx_dbt" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_env.cpp" FORMNAME="" UNITNAME="cxx_env" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_except.cpp" FORMNAME="" UNITNAME="cxx_except" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_lock.cpp" FORMNAME="" UNITNAME="cxx_lock" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_logc.cpp" FORMNAME="" UNITNAME="cxx_logc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_mpool.cpp" FORMNAME="" UNITNAME="cxx_mpool" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_multi.cpp" FORMNAME="" UNITNAME="cxx_multi" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\cxx\cxx_txn.cpp" FORMNAME="" UNITNAME="cxx_txn" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\crdel_auto.c" FORMNAME="" UNITNAME="crdel_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\crdel_rec.c" FORMNAME="" UNITNAME="crdel_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db.c" FORMNAME="" UNITNAME="db" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_am.c" FORMNAME="" UNITNAME="db_am" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_auto.c" FORMNAME="" UNITNAME="db_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_cam.c" FORMNAME="" UNITNAME="db_cam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_conv.c" FORMNAME="" UNITNAME="db_conv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_dispatch.c" FORMNAME="" UNITNAME="db_dispatch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_dup.c" FORMNAME="" UNITNAME="db_dup" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_iface.c" FORMNAME="" UNITNAME="db_iface" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_join.c" FORMNAME="" UNITNAME="db_join" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_meta.c" FORMNAME="" UNITNAME="db_meta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_method.c" FORMNAME="" UNITNAME="db_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_open.c" FORMNAME="" UNITNAME="db_open" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_overflow.c" FORMNAME="" UNITNAME="db_overflow" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_ovfl_vrfy.c" FORMNAME="" UNITNAME="db_ovfl_vrfy" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_pr.c" FORMNAME="" UNITNAME="db_pr" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_rec.c" FORMNAME="" UNITNAME="db_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_reclaim.c" FORMNAME="" UNITNAME="db_reclaim" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_remove.c" FORMNAME="" UNITNAME="db_remove" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_rename.c" FORMNAME="" UNITNAME="db_rename" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_ret.c" FORMNAME="" UNITNAME="db_ret" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_truncate.c" FORMNAME="" UNITNAME="db_truncate" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_upg.c" FORMNAME="" UNITNAME="db_upg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_upg_opd.c" FORMNAME="" UNITNAME="db_upg_opd" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_vrfy.c" FORMNAME="" UNITNAME="db_vrfy" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\db\db_vrfyutil.c" FORMNAME="" UNITNAME="db_vrfyutil" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\dbm\dbm.c" FORMNAME="" UNITNAME="dbm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\dbreg\dbreg.c" FORMNAME="" UNITNAME="dbreg" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\dbreg\dbreg_auto.c" FORMNAME="" UNITNAME="dbreg_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\dbreg\dbreg_rec.c" FORMNAME="" UNITNAME="dbreg_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\dbreg\dbreg_util.c" FORMNAME="" UNITNAME="dbreg_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\env\db_salloc.c" FORMNAME="" UNITNAME="db_salloc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\env\db_shash.c" FORMNAME="" UNITNAME="db_shash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\env\env_file.c" FORMNAME="" UNITNAME="env_file" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\env\env_method.c" FORMNAME="" UNITNAME="env_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\env\env_open.c" FORMNAME="" UNITNAME="env_open" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\env\env_recover.c" FORMNAME="" UNITNAME="env_recover" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\env\env_region.c" FORMNAME="" UNITNAME="env_region" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\fileops\fileops_auto.c" FORMNAME="" UNITNAME="fileops_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\fileops\fop_basic.c" FORMNAME="" UNITNAME="fop_basic" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\fileops\fop_rec.c" FORMNAME="" UNITNAME="fop_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\fileops\fop_util.c" FORMNAME="" UNITNAME="fop_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash.c" FORMNAME="" UNITNAME="hash" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_auto.c" FORMNAME="" UNITNAME="hash_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_conv.c" FORMNAME="" UNITNAME="hash_conv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_dup.c" FORMNAME="" UNITNAME="hash_dup" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_func.c" FORMNAME="" UNITNAME="hash_func" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_meta.c" FORMNAME="" UNITNAME="hash_meta" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_method.c" FORMNAME="" UNITNAME="hash_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_open.c" FORMNAME="" UNITNAME="hash_open" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_page.c" FORMNAME="" UNITNAME="hash_page" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_rec.c" FORMNAME="" UNITNAME="hash_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_reclaim.c" FORMNAME="" UNITNAME="hash_reclaim" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_stat.c" FORMNAME="" UNITNAME="hash_stat" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_upgrade.c" FORMNAME="" UNITNAME="hash_upgrade" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hash\hash_verify.c" FORMNAME="" UNITNAME="hash_verify" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hmac\hmac.c" FORMNAME="" UNITNAME="hmac" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hmac\sha1.c" FORMNAME="" UNITNAME="sha1" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\hsearch\hsearch.c" FORMNAME="" UNITNAME="hsearch" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lock\lock.c" FORMNAME="" UNITNAME="lock" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lock\lock_deadlock.c" FORMNAME="" UNITNAME="lock_deadlock" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lock\lock_method.c" FORMNAME="" UNITNAME="lock_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lock\lock_region.c" FORMNAME="" UNITNAME="lock_region" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lock\lock_stat.c" FORMNAME="" UNITNAME="lock_stat" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\lock\lock_util.c" FORMNAME="" UNITNAME="lock_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\log\log.c" FORMNAME="" UNITNAME="log" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\log\log_archive.c" FORMNAME="" UNITNAME="log_archive" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\log\log_compare.c" FORMNAME="" UNITNAME="log_compare" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\log\log_get.c" FORMNAME="" UNITNAME="log_get" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\log\log_method.c" FORMNAME="" UNITNAME="log_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\log\log_put.c" FORMNAME="" UNITNAME="log_put" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_alloc.c" FORMNAME="" UNITNAME="mp_alloc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_bh.c" FORMNAME="" UNITNAME="mp_bh" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_fget.c" FORMNAME="" UNITNAME="mp_fget" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_fopen.c" FORMNAME="" UNITNAME="mp_fopen" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_fput.c" FORMNAME="" UNITNAME="mp_fput" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_fset.c" FORMNAME="" UNITNAME="mp_fset" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_method.c" FORMNAME="" UNITNAME="mp_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_region.c" FORMNAME="" UNITNAME="mp_region" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_register.c" FORMNAME="" UNITNAME="mp_register" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_stat.c" FORMNAME="" UNITNAME="mp_stat" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_sync.c" FORMNAME="" UNITNAME="mp_sync" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mp\mp_trickle.c" FORMNAME="" UNITNAME="mp_trickle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mutex\mut_win32.c" FORMNAME="" UNITNAME="mut_win32" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\mutex\mutex.c" FORMNAME="" UNITNAME="mutex" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_alloc.c" FORMNAME="" UNITNAME="os_alloc" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_id.c" FORMNAME="" UNITNAME="os_id" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_method.c" FORMNAME="" UNITNAME="os_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_oflags.c" FORMNAME="" UNITNAME="os_oflags" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_region.c" FORMNAME="" UNITNAME="os_region" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_root.c" FORMNAME="" UNITNAME="os_root" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_rpath.c" FORMNAME="" UNITNAME="os_rpath" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_tmpdir.c" FORMNAME="" UNITNAME="os_tmpdir" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os\os_unlink.c" FORMNAME="" UNITNAME="os_unlink" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_abs.c" FORMNAME="" UNITNAME="os_abs" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_clock.c" FORMNAME="" UNITNAME="os_clock" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_config.c" FORMNAME="" UNITNAME="os_config" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_dir.c" FORMNAME="" UNITNAME="os_dir" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_errno.c" FORMNAME="" UNITNAME="os_errno" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_fid.c" FORMNAME="" UNITNAME="os_fid" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_fsync.c" FORMNAME="" UNITNAME="os_fsync" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_handle.c" FORMNAME="" UNITNAME="os_handle" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_map.c" FORMNAME="" UNITNAME="os_map" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_open.c" FORMNAME="" UNITNAME="os_open" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_rename.c" FORMNAME="" UNITNAME="os_rename" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_rw.c" FORMNAME="" UNITNAME="os_rw" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_seek.c" FORMNAME="" UNITNAME="os_seek" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_sleep.c" FORMNAME="" UNITNAME="os_sleep" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_spin.c" FORMNAME="" UNITNAME="os_spin" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\os_win32\os_stat.c" FORMNAME="" UNITNAME="os_stat" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam.c" FORMNAME="" UNITNAME="qam" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_auto.c" FORMNAME="" UNITNAME="qam_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_conv.c" FORMNAME="" UNITNAME="qam_conv" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_files.c" FORMNAME="" UNITNAME="qam_files" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_method.c" FORMNAME="" UNITNAME="qam_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_open.c" FORMNAME="" UNITNAME="qam_open" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_rec.c" FORMNAME="" UNITNAME="qam_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_stat.c" FORMNAME="" UNITNAME="qam_stat" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_upgrade.c" FORMNAME="" UNITNAME="qam_upgrade" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\qam\qam_verify.c" FORMNAME="" UNITNAME="qam_verify" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\rep\rep_method.c" FORMNAME="" UNITNAME="rep_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\rep\rep_record.c" FORMNAME="" UNITNAME="rep_record" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\rep\rep_region.c" FORMNAME="" UNITNAME="rep_region" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="db_dll.dsp" FORMNAME="" UNITNAME="db_dll.dsp" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\rep\rep_util.c" FORMNAME="" UNITNAME="rep_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn.c" FORMNAME="" UNITNAME="txn" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn_auto.c" FORMNAME="" UNITNAME="txn_auto" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn_method.c" FORMNAME="" UNITNAME="txn_method" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn_rec.c" FORMNAME="" UNITNAME="txn_rec" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn_recover.c" FORMNAME="" UNITNAME="txn_recover" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn_region.c" FORMNAME="" UNITNAME="txn_region" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn_stat.c" FORMNAME="" UNITNAME="txn_stat" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\txn\txn_util.c" FORMNAME="" UNITNAME="txn_util" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\xa\xa.c" FORMNAME="" UNITNAME="xa" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\xa\xa_db.c" FORMNAME="" UNITNAME="xa_db" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\xa\xa_map.c" FORMNAME="" UNITNAME="xa_map" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1036
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=..\xa;..\txn;..\rep;..\qam;..\os_win32;..\os;..\mutex;..\mp;..\log;..\lock;..\hsearch;..\hmac;..\hash;..\fileops;..\env;..\dbreg;..\dbm;..\db;..\cxx;..\common;..\clib;..\examples_cxx;..\btree;$(BCB)\include;$(BCB)\include\vcl
+Item1=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=3
+Item0=..\xa;..\txn;..\rep;..\qam;..\os_win32;..\os;..\mutex;..\mp;..\log;..\lock;..\hsearch;..\hmac;..\hash;..\fileops;..\env;..\dbreg;..\dbm;..\db;..\cxx;..\common;..\clib;..\examples_cxx;..\btree;$(BCB)\lib\obj;$(BCB)\lib
+Item1=$(BCB)\lib\obj;$(BCB)\lib
+Item2=$(BCB)\lib\obj;$(BCB)\lib;I:\Berkeley DB\db-4.2.52.NC\build_win32
+
+[HistoryLists\hlDebugSourcePath]
+Count=2
+Item0=$(BCB)\source\vcl; I:\Berkeley DB\db-4.2.52.NC\dbinc
+Item1=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl; I:\Berkeley DB\db-4.2.52.NC\dbinc
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+
+[Language]
+ActiveLang=
+ProjectLang=
+RootDir=
+  </IDEOPTIONS>
+</PROJECT>
