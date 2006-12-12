@@ -1,0 +1,22 @@
+Error 00001. 0x310000 (Thread 0x0690):
+Bad parameter: A bad memory block (0xE91CE8) has been passed to the function.
+SysFreeMem(0x00E91CE8) 
+
+Call Tree:
+   0x00402A63(=Project1.exe:0x01:001A63)
+   0x7C816D4F(=kernel32.dll:0x01:015D4F)
+
+------------------------------------------
+Error 00002. 0x310000 (r) (Thread 0x0690):
+Bad parameter: A bad memory block (0xE91D10) has been passed to the function.
+SysFreeMem(0x00E91D10) 
+
+Call Tree:
+   0x00402A63(=Project1.exe:0x01:001A63)
+   0x7C816D4F(=kernel32.dll:0x01:015D4F)
+
+------------------------------------------
+Error 00003. 0x310000 (r) (Thread 0x0690):
+Bad parameter: A bad memory block (0xE91C28) has been passed to the function.
+Error 00004. 0x310000 (r) (Thread 0x0690):
+Bad parameter: A bad memory block (0xE91C04) has been passed to the function.
